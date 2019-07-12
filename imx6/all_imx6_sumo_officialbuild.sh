@@ -72,7 +72,8 @@ if [ $EPCRS200A1 == true ]; then
 fi
 if [ $ROM7420A1 == true ]; then
 	PRODUCT="rom7420a1"
-	./imx6_sumo_officialbuild.sh rom7420a1 7420A1"$AIM_VERSION"LIV"$VERSION_NUM" 1G-2G fsl-imx-wayland
+	#./imx6_sumo_officialbuild.sh rom7420a1 7420A1"$AIM_VERSION"LIV"$VERSION_NUM" 1G-2G fsl-imx-wayland
+	./imx6_sumo_officialbuild.sh rom7420a1 7420A1"$AIM_VERSION"LIV"$VERSION_NUM" 1G fsl-imx-wayland
 	[ "$?" -ne 0 ] && exit 1
 fi
 if [ $ROM3420A1 == true ]; then
