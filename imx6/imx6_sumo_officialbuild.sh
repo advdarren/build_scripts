@@ -385,9 +385,6 @@ function build_yocto_sdk()
 {
         set_environment sdk
 
-	echo "[ADV] Build recovery image!"
-	building initramfs-debug-image
-
         # Build imx6qrom7420a1 full image first
         building $DEPLOY_IMAGE_NAME
 
@@ -406,9 +403,6 @@ function build_yocto_images()
         echo "[ADV] build_yocto_image: build kernel"
         building linux-imx cleansstate
         building linux-imx
-        
-	echo "[ADV] Build recovery image!"
-	building initramfs-debug-image
 
 	# Build full image
         building $DEPLOY_IMAGE_NAME
